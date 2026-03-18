@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+    <meta property="og:title" content="마이찬의 Today I Learn" />
+    <meta property="og:description" content="매일매일 성장하는 개발자의 기록 공간입니다." />
+    <meta property="og:image" content="./images/profile.jpg" />
 
-    <title>Today I Learn</title>
+    <title>Today I Learn - 마이찬</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
     <!-- 상단 내비게이션 -->
     <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
+      <span class="nav-logo">My TIL Page</span>
       <ul class="nav-links">
         <li><a href="#about">자기소개</a></li>
         <li><a href="#gallery">갤러리</a></li>
@@ -29,12 +28,11 @@
     <section class="hero" id="about">
       <div class="profile-card">
         <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <img src="./images/profile.jpg" alt="마이찬 프로필 사진" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>마이찬</h1>
+          <p class="tagline">어제보다 오늘 더 성장하는 개발자입니다. 🚀</p>
         </div>
       </div>
     </section>
@@ -43,30 +41,49 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>
+          안녕하세요! 저는 웹 개발을 공부하고 있는 학생입니다. 매일 새로운 것을 배우고 기록하는 즐거움을 느끼고 있습니다. 저의 학습 여정을 지켜봐 주세요!
+        </p>
+        <p>
+          더 많은 활동이 궁금하시다면:
+          <br>
+          🔗 <a href="https://github.com/mychan" target="_blank">GitHub</a> | 
+          📝 <a href="https://velog.io/@mychan" target="_blank">블로그</a> | 
+          📸 <a href="https://instagram.com/xmx_ychan" target="_blank">Instagram</a>
+        </p>
       </section>
 
       <!-- 기본 정보 -->
       <section class="content-section" id="info">
         <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>마이찬</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ISFJ</td>
+          </tr>
+          <tr>
+            <th>기술 스택</th>
+            <td>JAVA, Spring, MySQL, AWS</td>
+          </tr>
+          <tr>
+            <th>관심 분야</th>
+            <td>백엔드 개발, DevOps</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>베이스 기타 연주, 헬스, 빈티지 디깅</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>치킨, 제육덮밥, 아이스 아메리카노</td>
+          </tr>
+          <tr>
+            <th>목표</th>
+            <td>선한 영향력을 끼치는 백엔드 개발자 되기</td>
           </tr>
         </table>
       </section>
@@ -74,33 +91,37 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">밴드의 순간들</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <img src="./images/gallery-1.jpg" alt="베이스 기타 1" />
+          <img src="./images/gallery-2.jpg" alt="베이스 기타 2" />
+          <img src="./images/gallery-3.jpg" alt="베이스 기타 3" />
         </div>
       </section>
 
       <!-- 나를 울린 인생 작품 -->
       <section class="content-section" id="works">
-        <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
+        <h2>인생 노래</h2>
+        <ul class="works-list">
+          <li class="work-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+              <img src="./images/Everlong.png" alt="Oasis - (What's the Story) Morning Glory? 앨범 커버" />
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>Everlong (Foo Fighters)</h3>
+              <p>심장이 뛰는 노래입니다....</p>
             </div>
-          </article>
-        </div>
+          </li>
+          <li class="work-card">
+            <div class="work-thumbnail">
+              <img src="./images/basket_case.png" alt="Foo Fighters 앨범 커버" />
+            </div>
+            <div class="work-info">
+              <h3>Bascket Case (Green Day)</h3>
+              <p>띵곡..</p>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <!-- TIL (Today I Learned) -->
@@ -128,9 +149,8 @@
           </div>
         </form>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
+        <!-- TIL 목록 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
           <article class="til-item">
             <time>2026-03-15</time>
             <h3>HTML 시멘틱 태그</h3>
@@ -142,7 +162,7 @@
     </main>
 
     <footer>
-      <p>&copy; My Page</p>
+      <p>&copy; 2026 My TIL Page - 마이찬</p>
     </footer>
   </body>
 </html>
